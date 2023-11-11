@@ -2,7 +2,7 @@ syntax = "proto3";
 
 package hello;
 
-import "google/type/date.proto";
+import "proto/googleapis/google/type/date.proto";
 
 service HelloService {
     rpc SayHello (HelloRequest) returns (HelloResponse);

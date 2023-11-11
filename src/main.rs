@@ -1,7 +1,4 @@
-mod hello {
-    tonic::include_proto!("hello");
-}
-
+include!("proto.rs");
 use hello::{
     hello_service_server::{HelloService, HelloServiceServer},
     HelloRequest, HelloResponse,

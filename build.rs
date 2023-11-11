@@ -9,7 +9,7 @@ fn main() -> Result<(), Box<dyn std::error::Error>> {
             PathBuf::from(env::var("OUT_DIR").expect("OUT_DIR is not set"))
                 .join("hello_descriptor.bin"),
         )
-        .compile(&["proto/helloworld/helloworld.proto"], &["proto"])?;
+        .compile(&["proto/helloworld/helloworld.proto"], &["."])?;
 
     Ok(())
 }
